@@ -1,3 +1,5 @@
+package ArraysAndStrings;
+
 /**
  * Created by manikandan5 on 1/22/17.
  */

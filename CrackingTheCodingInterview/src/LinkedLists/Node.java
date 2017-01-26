@@ -37,6 +37,17 @@ public class Node
         return head;
     }
 
+    public static int findLength(Node head)
+    {
+        int i=0;
+        while(head != null)
+        {
+            head = head.next;
+            i++;
+        }
+        return i;
+    }
+
     public static void printList(Node node)
     {
         System.out.println("The list is as follows:");
@@ -45,5 +56,14 @@ public class Node
             System.out.println(node.data);
             node = node.next;
         }
+    }
+
+    public static Node findMiddle(Node head, int n)
+    {
+        for(int i=0; i < n/2; i++)
+        {
+            head = head.next;
+        }
+        return head;
     }
 }

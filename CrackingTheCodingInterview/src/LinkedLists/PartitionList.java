@@ -31,7 +31,7 @@ public class PartitionList
                     list1Traversal.next = null;
                 }
             }
-            else if(curr.data > k.data)
+            else if(curr.data >= k.data)
             {
                 if(list2 == null)
                 {
@@ -48,13 +48,8 @@ public class PartitionList
                     list2Traversal.next = null;
                 }
             }
-            else
-            {
-                curr = curr.next;
-            }
         }
-        list1Traversal.next = k;
-        k.next = list2;
+        list1Traversal.next = list2;
         return list1;
     }
 

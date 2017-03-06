@@ -1,5 +1,7 @@
 package Stacks;
 
+import java.util.ArrayList;
+
 class Node
 {
     Node next;
@@ -13,7 +15,7 @@ class Node
 
 public class Stack
 {
-    Node top;
+    private Node top;
 
     //Insert the element to the top of the stack
     public void push(int data)
